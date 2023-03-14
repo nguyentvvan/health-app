@@ -17,6 +17,7 @@ $gray-400: #777777;
 $brandOrange: $primary-400 !default;
 
 $font-size-base:          1rem !default; // 16px
+$font-size-xxl:           ($font-size-base * 1.56) !default; // 25px
 $font-size-xl:            ($font-size-base * 1.375) !default; // 22px
 $font-size-lg:            ($font-size-base * 1.25) !default; // 20px
 $font-size-md:            ($font-size-base * 1.12) !default; // 18px

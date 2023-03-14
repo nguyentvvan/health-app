@@ -1,0 +1,27 @@
+@import "styles/base";
+
+.filter-buttons {
+	width: 70%;
+	max-width: 900px;
+	height: 200px;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	.filter-button {
+		background: url(../../../assets/img/filter-btn-bg.svg);
+		background-repeat: no-repeat;
+		width: 116px;
+		height: 134px;
+		color: $white;
+		font-size: $font-size-lg;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		img {
+			width: 53px;
+			height: 45px;
+		}
+	}
+}

@@ -10,15 +10,15 @@ import BurgurMenu from './BurgurMenu';
 const NAV_ITEMS = [{
 	path: '/my-record',
 	text: '自分の記録',
-	icon: 'PROFILE'
+	icon: 'profile'
 },{
 	path: '/challenge',
 	text: 'チャレンジ',
-	icon: 'CHALLENGE'
+	icon: 'challenge'
 },{
 	path: '/info',
 	text: 'お知らせ',
-	icon: 'INFO'
+	icon: 'info'
 }];
 
 export default function Header() {
@@ -35,7 +35,7 @@ export default function Header() {
 					{NAV_ITEMS.map((item, index) =>
 						<div className='nav-item' key={index}>
 							<NavLink exact={item.exact} to={item.path}>
-								<Icon icon={Icons[item.icon]} />
+								<Icon icon={Icons[item.icon.toUpperCase()]} />
 								{item.text}
 							</NavLink>
 						</div>
