@@ -1,5 +1,6 @@
 import SectionListControl from "components/base/SectionListControl";
 import FilterButtons from "components/TopPage/FilterButtons";
+import MainProgress from "components/TopPage/MainProgress";
 import Controls from "constants/controls";
 
 const MEALS = [{
@@ -38,12 +39,25 @@ const MEALS = [{
 
 export default function TopPage() {
 	return (
-		<div className="content-wrapper min-vh-50">
+		<div className="min-vh-50">
+			<div className="row">
+				<div className="col-xs-5 col-sm-5 col-md-5 col-lg-5 p-0">
+					<MainProgress
+						image='d01.jpg'
+						percentage={75}
+					/>
+				</div>
+				<div className="col-xs-7 col-sm-7 col-md-7 col-lg-7 p-0">
+					<div className="w-100 h-100" />
+				</div>
+			</div>
+			<div className="content-wrapper">
 			<FilterButtons />
 			<SectionListControl
 				items={MEALS}
 				type={Controls.MEAL}
 			/>
+			</div>
 		</div>
 	)
 }
