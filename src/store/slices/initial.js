@@ -3,6 +3,7 @@ import {
 } from '@reduxjs/toolkit';
 
 const initialState = {
+  loadMoreButtonText: '記録をもっと見る',
   columns: [{
     title: 'RECOMMENDED COLUMN',
     text: 'オススメ',
@@ -15,55 +16,6 @@ const initialState = {
   },{
     title: 'RECOMMENDED HEALTH',
     text: '健康',
-  }],
-  posts: [{
-    image: 'column-1.jpg',
-    date: '2021.05.17',
-    time: '23:25',
-    description: '魚を食べて頭もカラダも元気に！知っておきたい魚を食べるメリ…',
-    hashTags: '#魚料理 #和食 #DHA'
-  },{
-    image: 'column-2.jpg',
-    date: '2021.05.17',
-    time: '23:25',
-    description: '魚を食べて頭もカラダも元気に！知っておきたい魚を食べるメリ…',
-    hashTags: '#魚料理 #和食 #DHA'
-  },{
-    image: 'column-3.jpg',
-    date: '2021.05.17',
-    time: '23:25',
-    description: '魚を食べて頭もカラダも元気に！知っておきたい魚を食べるメリ…',
-    hashTags: '#魚料理 #和食 #DHA'
-  },{
-    image: 'column-4.jpg',
-    date: '2021.05.17',
-    time: '23:25',
-    description: '魚を食べて頭もカラダも元気に！知っておきたい魚を食べるメリ…',
-    hashTags: '#魚料理 #和食 #DHA'
-  },{
-    image: 'column-5.jpg',
-    date: '2021.05.17',
-    time: '23:25',
-    description: '魚を食べて頭もカラダも元気に！知っておきたい魚を食べるメリ…',
-    hashTags: '#魚料理 #和食 #DHA'
-  },{
-    image: 'column-6.jpg',
-    date: '2021.05.17',
-    time: '23:25',
-    description: '魚を食べて頭もカラダも元気に！知っておきたい魚を食べるメリ…',
-    hashTags: '#魚料理 #和食 #DHA'
-  },{
-    image: 'column-7.jpg',
-    date: '2021.05.17',
-    time: '23:25',
-    description: '魚を食べて頭もカラダも元気に！知っておきたい魚を食べるメリ…',
-    hashTags: '#魚料理 #和食 #DHA'
-  },{
-    image: 'column-8.jpg',
-    date: '2021.05.17',
-    time: '23:25',
-    description: '魚を食べて頭もカラダも元気に！知っておきたい魚を食べるメリ…',
-    hashTags: '#魚料理 #和食 #DHA'
   }],
 };
 

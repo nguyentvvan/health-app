@@ -1,24 +1,20 @@
 import { useSelector } from "react-redux";
 
-import SectionListControl from "components/base/SectionListControl";
 import SectionList from "components/base/SectionList";
-import Controls from "constants/controls";
+import { DataControls, SectionControls } from "constants/controls";
+import DataList from "components/base/DataList";
 
 export default function ColumnPage() {
 	const columns = useSelector(state => state.initial.columns);
-	const posts = useSelector(state => state.initial.posts);
 
 	return (
-		<div className='content-wrapper min-vh-50'>
+		<div className="content-wrapper min-vh-50">
 			<SectionList
 				items={columns}
-				type={Controls.RECOMMEND}
+				type={SectionControls.RECOMMEND}
 				className="my-5"
 			/>
-			<SectionListControl
-				items={posts}
-				type={Controls.POST}
-			/>
+			<DataList type={DataControls.POST} />
 		</div>
 	)
 }

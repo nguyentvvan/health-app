@@ -9,6 +9,7 @@
 	justify-content: space-between;
 	align-items: center;
 	.filter-button {
+		cursor: pointer;
 		background: url(../../../assets/img/filter-btn-bg.svg);
 		background-repeat: no-repeat;
 		width: 116px;
@@ -19,6 +20,9 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		&.active {
+			transform: scale(1.25);
+		}
 		img {
 			width: 53px;
 			height: 45px;

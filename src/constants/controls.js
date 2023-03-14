@@ -1,8 +1,15 @@
-const Controls = {
+const SectionControls = {
   RECOMMEND: 'Recommend',
+  RECORD: 'Record',
+}
+
+const DataControls = {
   POST: 'Post',
   MEAL: 'Meal',
-  RECORD: 'Record',
   DIARY: 'Diary',
 }
-export default Controls;
+
+export {
+  SectionControls,
+  DataControls,
+};

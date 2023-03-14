@@ -1,14 +1,8 @@
-import { useSelector } from 'react-redux';
-
-import SectionListControl from "components/base/SectionListControl";
-import FilterButtons from "components/TopPage/FilterButtons";
 import MainProgress from "components/TopPage/MainProgress";
-import Controls from "constants/controls";
 import LineChart from "components/Charts/LineChart";
+import MealList from "components/TopPage/MealList";
 
 export default function TopPage() {
-	const meals = useSelector(state => state.userInfo.meals);
-
 	return (
 		<div className="min-vh-50">
 			<div className="row">
@@ -24,11 +18,7 @@ export default function TopPage() {
 				</div>
 			</div>
 			<div className="content-wrapper">
-			<FilterButtons />
-			<SectionListControl
-				items={meals}
-				type={Controls.MEAL}
-			/>
+			<MealList />
 			</div>
 		</div>
 	)

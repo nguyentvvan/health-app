@@ -1,20 +1,19 @@
 import { useSelector } from 'react-redux';
 
 import SectionList from "components/base/SectionList";
-import Controls from "constants/controls";
-import SectionListControl from "components/base/SectionListControl";
+import { DataControls, SectionControls } from "constants/controls";
 import ExerciseList from "components/MyRecord/ExerciseList";
 import LineChart from "components/Charts/LineChart";
+import DataList from 'components/base/DataList';
 
 export default function MyRecord() {
 	const records = useSelector(state => state.userInfo.records);
-	const diaries = useSelector(state => state.userInfo.diaries);
 
 	return (
 		<div className='content-wrapper min-vh-50'>
 			<SectionList
 				items={records}
-				type={Controls.RECORD}
+				type={SectionControls.RECORD}
 				className="my-5"
 			/>
 
@@ -32,9 +31,9 @@ export default function MyRecord() {
 
 			<ExerciseList />
 
-			<SectionListControl
-				items={diaries}
-				type={Controls.DIARY}
+			<DataList
+				title="MY DIARY"
+				type={DataControls.DIARY}
 			/>
 		</div>
 	)
