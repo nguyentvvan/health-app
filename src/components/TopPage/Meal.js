@@ -6,7 +6,7 @@ export default function Meal ({image, date, type}) {
 	return (
 		<div className='meal'>
 			<img src={getImageURL(image)} alt='meal' />
-			<span>{date}.{type}</span>
+			<span className='p-2'>{date}.{type}</span>
 		</div>
 	)
 }
