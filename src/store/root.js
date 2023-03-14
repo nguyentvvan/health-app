@@ -1,13 +1,13 @@
 import { combineReducers } from '@reduxjs/toolkit';
 
 import {
-  userReducer as user,
+  userReducer as userInfo,
   globalReducer as global,
   initialReducer as initial,
 } from './slices';
 
 export const rootReducer = combineReducers({
-	user,
+	userInfo,
 	global,
 	initial,
 });
