@@ -16,6 +16,15 @@ $gray-400: #777777;
 
 $brandOrange: $primary-400 !default;
 
+$font-size-base:              1rem !default; // 16px
+$font-size-lg:                ($font-size-base * 1.25) !default; // 20px
+$font-size-md:                ($font-size-base * 1.11) !default; // 18px
+$font-size-sm:                ($font-size-base * .875) !default; // 14px
+$font-size-xs:                ($font-size-base * .7) !default;  // 11px
+
+$global-header-height: 64px;
+$global-footer-height: 128px;
+
 /**************************************************/
 /*****/ @import "~bootstrap/scss/variables"; /*****/
 /*****/ @import "~bootstrap/scss/mixins";    /*****/

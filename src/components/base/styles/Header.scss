@@ -1,0 +1,28 @@
+@import "styles/base";
+
+header {
+	background: $dark-500;
+	nav {
+		.nav-item {
+			width: 160px;
+			height: $global-header-height;
+			line-height: $global-header-height;
+			text-align: center;
+		}
+		a {
+			text-decoration: none;
+			color: $white;
+			&.active,
+			&:hover {
+				color: $primary-400;
+			}
+			.base-icon {
+				margin-right: 10px;
+			}
+		}
+		.burgur-button {
+			height: $global-header-height;
+			line-height: $global-header-height;
+		}
+	}
+}

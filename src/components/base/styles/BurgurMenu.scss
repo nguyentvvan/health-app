@@ -1,0 +1,34 @@
+@import "styles/base";
+
+#burgur-menu {
+	position: relative;
+	z-index: 1000;
+	.burgur-menu-items {
+		width: 280px;
+		position: absolute;
+		right: 0;
+		background: $gray-400;
+		font-size: $font-size-md;
+		.burgur-menu-item{
+			line-height: 72px;
+			height: 72px;
+			a {
+				width: 100%;
+				display: block;
+				color: $white;
+				padding-left: 32px;
+				&:hover {
+					color: $primary-400;
+				}
+			}
+			&::after {
+				display: block;
+				content: '';
+				width: 100%;
+				height: 1px;
+				background: $white;
+				opacity: 0.15;
+			}
+		}
+	}
+}

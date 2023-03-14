@@ -1,0 +1,12 @@
+@import "styles/base";
+
+footer {
+	background: $dark-500;
+	color: $white;
+	height: $global-footer-height;
+	font-size: $font-size-xs;
+	.footer-text {
+		margin-right: 45px;
+		line-height: $global-footer-height;
+	}
+}

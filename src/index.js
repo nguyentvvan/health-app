@@ -5,14 +5,18 @@ import {
   Route,
   Switch,
 } from "react-router-dom";
-import 'styles/app.scss';
 
+import Header from 'components/base/Header';
+import Footer from 'components/base/Footer';
 import routes from './routes';
+
+import 'styles/app.scss';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Router>
+      <Header />
       <Switch>
       {routes.map((route, index) =>
         <Route
@@ -23,6 +27,7 @@ root.render(
         />
       )}
       </Switch>
+      <Footer />
     </Router>
   </React.StrictMode>
 );
