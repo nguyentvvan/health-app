@@ -5,31 +5,35 @@ import {
   Route,
   Switch,
 } from "react-router-dom";
+import { Provider } from 'react-redux';
 
 import Header from 'components/base/Header';
 import Footer from 'components/base/Footer';
+import GoToTopButton from 'components/base/GoToTopButton';
 import routes from './routes';
+import { store } from 'store';
 
 import 'styles/app.scss';
-import GoToTopButton from 'components/base/GoToTopButton';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Router>
-      <Header />
-      <Switch>
-      {routes.map((route, index) =>
-        <Route
-          key={index}
-          path={route.path}
-          exact={route.exact}
-          children={route.element}
-        />
-      )}
-      </Switch>
-      <GoToTopButton />
-      <Footer />
-    </Router>
+    <Provider store={store}>
+      <Router>
+        <Header />
+        <Switch>
+        {routes.map((route, index) =>
+          <Route
+            key={index}
+            path={route.path}
+            exact={route.exact}
+            children={route.element}
+          />
+        )}
+        </Switch>
+        <GoToTopButton />
+        <Footer />
+      </Router>
+    </Provider>
   </React.StrictMode>
 );
