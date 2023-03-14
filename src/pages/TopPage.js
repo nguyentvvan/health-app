@@ -4,6 +4,7 @@ import SectionListControl from "components/base/SectionListControl";
 import FilterButtons from "components/TopPage/FilterButtons";
 import MainProgress from "components/TopPage/MainProgress";
 import Controls from "constants/controls";
+import LineChart from "components/Charts/LineChart";
 
 export default function TopPage() {
 	const meals = useSelector(state => state.userInfo.meals);
@@ -15,7 +16,11 @@ export default function TopPage() {
 					<MainProgress />
 				</div>
 				<div className="col-xs-7 col-sm-7 col-md-7 col-lg-7 p-0">
-					<div className="w-100 h-100" />
+					<div className="w-100 h-100">
+						<LineChart
+							height={284}
+						/>
+					</div>
 				</div>
 			</div>
 			<div className="content-wrapper">

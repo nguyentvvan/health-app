@@ -18,6 +18,18 @@ export default function MyRecord() {
 				className="my-5"
 			/>
 
+			<LineChart 
+				className='my-4'
+				title={
+					<div className='section-title d-flex'>
+						<div className='title'>BODY RECORD</div>
+						<div className='date'>2021.05.21</div>
+					</div>
+				}
+				showLegends
+				height={304} 
+			/>
+
 			<ExerciseList />
 
 			<SectionListControl

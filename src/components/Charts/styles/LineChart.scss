@@ -1,0 +1,35 @@
+@import "styles/base";
+
+.line-chart {
+	background: $dark-600;
+	color: $white;
+	padding: 16px 0 16px 24px;
+	.section-title {
+		.title {
+			width: 96px;
+			line-height: $line-height-s;
+			font-weight: 400;
+		}
+		.date {
+			font-size: $font-size-xl;
+			line-height: $line-height-lg;
+		}
+	}
+	.chart {
+		padding: 20px 50px 20px 20px;
+	}
+	.legend {
+		width: 56px;
+		height: 24px;
+		line-height: 24px;
+		text-align: center;
+		background: $white;
+		color: $primary-300;
+		margin-right: 16px;
+		border-radius: 11px;
+		&.active {
+			background: $primary-300;
+			color: $white;
+		}
+	}
+}
