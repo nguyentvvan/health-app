@@ -12,11 +12,11 @@ const NAV_ITEMS = [{
 	text: '自分の記録',
 	icon: 'PROFILE'
 },{
-	path: '/',
+	path: '/challenge',
 	text: 'チャレンジ',
 	icon: 'CHALLENGE'
 },{
-	path: '/',
+	path: '/info',
 	text: 'お知らせ',
 	icon: 'INFO'
 }];

@@ -11,6 +11,7 @@ import Footer from 'components/base/Footer';
 import routes from './routes';
 
 import 'styles/app.scss';
+import GoToTopButton from 'components/base/GoToTopButton';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -27,6 +28,7 @@ root.render(
         />
       )}
       </Switch>
+      <GoToTopButton />
       <Footer />
     </Router>
   </React.StrictMode>
