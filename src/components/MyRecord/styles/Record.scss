@@ -1,0 +1,32 @@
+@import "styles/base";
+
+.record {
+	width: 240px;
+	height: 240px;
+	border: 24px solid $primary-300;
+	position: relative;
+	img {
+		object-fit: cover;
+	}
+	.info {
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: rgba($black, 0.6);
+		.title {
+			color: $primary-300;
+			font-size: $font-size-xxl;
+			line-height: $line-height-lg;
+			font-weight: 400;
+			letter-spacing: 0.125px;
+		}
+		.text {
+			font-size: $font-size-sm;
+			line-height: $line-height-md;
+			margin-top: 10px;
+			background: $primary-400;
+			color: $white;
+			padding: 0 20px 0 20px;
+		}
+	}
+}

@@ -3,11 +3,15 @@ import cn from 'classnames';
 import Recommend from 'components/CollumnPage/Recommend';
 import Post from 'components/CollumnPage/Post';
 import Meal from 'components/TopPage/Meal';
+import Record from 'components/MyRecord/Record';
+import Diary from 'components/MyRecord/Diary';
 
 const controls = {
   Recommend,
 	Post,
 	Meal,
+	Record,
+	Diary,
 };
 
 export default function SectionList({className, items, type}) {

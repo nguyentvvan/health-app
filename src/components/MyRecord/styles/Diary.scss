@@ -1,0 +1,18 @@
+@import "styles/base";
+
+.diary {
+	width: 24%;
+	height: 231px;
+	border: 1px solid $black;
+	margin-bottom: 15px;
+	padding: 16px;
+	.date, .time {
+		font-size: $font-size-md;
+	}
+	.content {
+		font-size: $font-size-s;
+		line-height: $line-height-s;
+		color: $dark-500;
+		margin-top: 8px;
+	}
+}
