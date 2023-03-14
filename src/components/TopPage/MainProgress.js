@@ -1,20 +1,17 @@
+import { useSelector } from 'react-redux';
+
 import CircleProgressBar from 'components/base/CircleProgressBar';
 import getImageURL from 'helpers/getImageURL';
 
 import './styles/MainProgress.scss';
 
-const USER_PROGRESS = {
-	image: 'd01.jpg',
-	percentage: 75,
-	date: '05/21',
-};
-
 export default function MainProgress() {
 	const {
 		image,
-		percentage,
 		date,
-	} = USER_PROGRESS;
+		percentage,
+	} = useSelector(state => state.userInfo.mainProgress);
+
 	return (
 		<div className='main-progress d-flex justify-content-center justify-items-center'>
 			<img src={getImageURL(image)} alt='meal' />

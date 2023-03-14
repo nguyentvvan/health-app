@@ -1,27 +1,16 @@
 import { NavLink } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
 import Icon from './Icon';
 import Icons from 'constants/icons';
 import Images from 'constants/images';
-
-import './styles/Header.scss';
 import BurgurMenu from './BurgurMenu';
 
-const NAV_ITEMS = [{
-	path: '/my-record',
-	text: '自分の記録',
-	icon: 'profile'
-},{
-	path: '/challenge',
-	text: 'チャレンジ',
-	icon: 'challenge'
-},{
-	path: '/info',
-	text: 'お知らせ',
-	icon: 'info'
-}];
+import './styles/Header.scss';
 
 export default function Header() {
+	const navItems = useSelector(state => state.global.header.navigations);
+
 	return (
 		<header>
 			<div className='header-navigation content-wrapper d-flex justify-content-between'>
@@ -32,7 +21,7 @@ export default function Header() {
 				</div>
 				
 				<nav className="d-flex justify-content-end">
-					{NAV_ITEMS.map((item, index) =>
+					{navItems.map((item, index) =>
 						<div className='nav-item' key={index}>
 							<NavLink exact={item.exact} to={item.path}>
 								<Icon icon={Icons[item.icon.toUpperCase()]} />

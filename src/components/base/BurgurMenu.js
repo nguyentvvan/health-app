@@ -1,35 +1,18 @@
 import { useEffect, useState, useRef } from 'react';
 import { NavLink } from 'react-router-dom';
 import cn from 'classnames';
+import { useSelector } from 'react-redux';
 
 import Icons from 'constants/icons';
 import Icon from './Icon';
 
 import './styles/BurgurMenu.scss';
 
-const ITEMS = [{
-	text: '自分の記録',
-	urlPath: '/my-record',
-},{
-	text: '体重グラフ',
-	urlPath: '',
-},{
-	text: '目標',
-	urlPath: '',
-},{
-	text: '選択中のコース',
-	urlPath: '',
-},{
-	text: 'コラム一覧',
-	urlPath: '/column',
-},{
-	text: '設定',
-	urlPath: '',
-}];
-
 export default function BurgurMenu() {
 	const [visible, setVisible] = useState(false);
 	const ref = useRef(null);
+
+	const userMenuItems = useSelector(state => state.global.header.userMenu.items);
 
 	useEffect(() => {
 		const clickOutsideBurgurMenu = (e) => {
@@ -57,7 +40,7 @@ export default function BurgurMenu() {
 				<Icon icon={Icons.BURGURBUTTON} />
 			</button>
 			<div className={cn("burgur-menu-items", visible ? 'd-block' : 'd-none')}>
-			{ITEMS.map((item, index) => 
+			{userMenuItems.map((item, index) => 
 				<div key={index} className="burgur-menu-item">
 					<NavLink to={item.urlPath}>
 						{item.text}
