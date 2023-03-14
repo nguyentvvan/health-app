@@ -1,5 +1,5 @@
 export default function ColumnPage() {
 	return (
-		<div>ColumnPage</div>
+		<div className="min-vh-50">ColumnPage</div>
 	)
 }

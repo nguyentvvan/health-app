@@ -16,11 +16,16 @@ $gray-400: #777777;
 
 $brandOrange: $primary-400 !default;
 
-$font-size-base:              1rem !default; // 16px
-$font-size-lg:                ($font-size-base * 1.25) !default; // 20px
-$font-size-md:                ($font-size-base * 1.11) !default; // 18px
-$font-size-sm:                ($font-size-base * .875) !default; // 14px
-$font-size-xs:                ($font-size-base * .7) !default;  // 11px
+$font-size-base:          1rem !default; // 16px
+$font-size-xl:            ($font-size-base * 1.375) !default; // 22px
+$font-size-lg:            ($font-size-base * 1.25) !default; // 20px
+$font-size-md:            ($font-size-base * 1.12) !default; // 18px
+$font-size-sm:            ($font-size-base * .9375) !default; // 15px
+$font-size-s:             ($font-size-base * .75) !default;  // 12px
+$font-size-xs:            ($font-size-base * .7) !default;  // 11px
+
+$line-height-base:        1.5 !default; // 22px
+// $line-height-md:        	1.7 !default; // 25px
 
 $global-header-height: 64px;
 $global-footer-height: 128px;

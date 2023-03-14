@@ -1,5 +1,5 @@
 export default function TopPage() {
 	return (
-		<div style={{minHeight: 500}}>TopPage</div>
+		<div className="min-vh-50">TopPage</div>
 	)
 }

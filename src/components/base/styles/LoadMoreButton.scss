@@ -1,0 +1,11 @@
+@import "styles/base";
+
+.load-more-button {
+	button {
+		background: $primary-300-400;
+		padding: 14px 65px;
+		border: none;
+		border-radius: 5px;
+		color: $white;
+	}
+}
