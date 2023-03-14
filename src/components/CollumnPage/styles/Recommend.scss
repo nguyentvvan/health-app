@@ -1,0 +1,28 @@
+@import "styles/base";
+
+.recommend {
+	width: 216px;
+	height: 144px;
+	background: $dark-600;
+	color: $white;
+	padding: 24px 10px 22px 10px;
+	.title {
+		color: $primary-300;
+		font-size: $font-size-xl;
+		text-align: center;
+		line-height: 27px;
+		font-weight: 400;
+	}
+	hr {
+		color: $white;
+		opacity: 0.5;
+		width: 56px;
+		margin: auto;
+		margin-top: 10px;
+	}
+	.text {
+		font-size: $font-size-md;
+		text-align: center;
+		margin-top: 8px;
+	}
+}

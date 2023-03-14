@@ -1,5 +1,6 @@
 import SectionList from "components/base/SectionList";
-import LoadMoreButton from "components/base/LoadMoreButton";
+import Controls from "constants/controls";
+import SectionListControl from "components/base/SectionListControl";
 
 const RECOMMENDS = [{
 	title: 'RECOMMENDED COLUMN',
@@ -70,14 +71,13 @@ export default function MyRecord() {
 		<div className='content-wrapper min-vh-50'>
 			<SectionList
 				items={RECOMMENDS}
-				type="Recommend"
+				type={Controls.RECOMMEND}
 				className="my-5"
 			/>
-			<SectionList
+			<SectionListControl
 				items={POSTS}
-				type="Post"
+				type={Controls.POST}
 			/>
-			<LoadMoreButton className='mb-5' />
 		</div>
 	)
 }
