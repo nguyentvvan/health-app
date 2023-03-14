@@ -1,6 +1,7 @@
 import SectionList from "components/base/SectionList";
 import Controls from "constants/controls";
 import SectionListControl from "components/base/SectionListControl";
+import ExerciseList from "components/MyRecord/ExerciseList";
 
 const RECORDS = [{
 	title: 'BODY RECORD',
@@ -58,6 +59,9 @@ export default function MyRecord() {
 				type={Controls.RECORD}
 				className="my-5"
 			/>
+
+			<ExerciseList />
+
 			<SectionListControl
 				items={DIARIES}
 				type={Controls.DIARY}

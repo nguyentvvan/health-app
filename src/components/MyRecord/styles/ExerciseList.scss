@@ -1,0 +1,24 @@
+@import 'styles/base';
+
+.exercise-list {
+	background: $dark-500;
+	color: $white;
+	padding: 10px 24px 10px 16px;
+	font-size: $font-size-sm;
+	.section-title {
+		.title {
+			width: 96px;
+			line-height: $line-height-s;
+			font-weight: 400;
+		}
+		.date {
+			font-size: $font-size-xl;
+			line-height: $line-height-lg;
+		}
+	}
+	.exercises {
+		height: 264px;
+		overflow-y: scroll;
+		padding-right: 20px;
+	}
+}

@@ -1,0 +1,26 @@
+@import 'styles/base';
+
+.exercise {
+	width: 47%;
+	display: flex;
+	border-bottom: 1px solid $gray-400;
+	padding-top: 10px;
+	line-height: $line-height-base;
+	&::before {
+		content: '';
+		width: 7px;
+		height: 7px;
+		border-radius: 50%;
+		background: $white;
+		margin-top: 10px;
+		margin-right: 15px;
+	}
+	.time {
+		font-size: $font-size-md;
+		color: $primary-300;
+	}
+	.kcal {
+		line-height: $line-height-s;
+		color: $primary-300;
+	}
+}
